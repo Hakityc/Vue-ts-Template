@@ -8,6 +8,6 @@ const router = createRouter({
 })
 
 export const setupRouter = async (app: any) => {
-  await router.isReady()
   app.use(router)
+  await router.isReady()
 }
