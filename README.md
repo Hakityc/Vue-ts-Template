@@ -1,4 +1,3 @@
-# Vue3 + Vite + Ts 模板
-<img src="https://img.shields.io/badge/node-18.10.0-green.svg" />
+# Vue3 + Vite + Ts Template
 
-组件库使用antDesignVue
+![node>=18](https://img.shields.io/badge/node-18.10.0-green.svg)
