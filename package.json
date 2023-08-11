@@ -19,6 +19,7 @@
     "pinia": "^2.1.6",
     "unocss": "^0.54.1",
     "unplugin-auto-import": "^0.15.2",
+    "unplugin-icons": "^0.16.5",
     "vue": "^3.2.47",
     "vue-router": "^4.2.4"
   },
