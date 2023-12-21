@@ -5,7 +5,8 @@
 
 html {
   /* 方便unocss计算：1单位 = 0.25rem = 1px */
-  font-size: 4px;
+  /* 用figma不需要设置为4px，方便copy*/
+  /* font-size: 4px; */
 }
 
 body {
