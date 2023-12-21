@@ -1,10 +1,16 @@
-import { RouteRecordRaw, createRouter, createWebHistory } from "vue-router"
+import { RouteRecordRaw, createRouter, createWebHistory } from 'vue-router'
 
-const routes: RouteRecordRaw[] = []
+const routes: RouteRecordRaw[] = [
+  {
+    name: 'home',
+    path: '/',
+    component: () => import('@/views/HomeView.vue')
+  }
+]
 
 const router = createRouter({
   history: createWebHistory(),
-  routes,
+  routes
 })
 
 export const setupRouter = async (app: any) => {

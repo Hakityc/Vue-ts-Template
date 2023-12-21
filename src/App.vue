@@ -1,9 +1,7 @@
 <template>
-  <HelloWorldView></HelloWorldView>
+  <router-view></router-view>
 </template>
 
-<script setup lang="ts">
-import HelloWorldView from './views/HelloWorldView.vue'
-</script>
+<script setup lang="ts"></script>
 
 <style scoped></style>

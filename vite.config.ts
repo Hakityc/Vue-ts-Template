@@ -15,6 +15,7 @@ export default defineConfig({
     unocss(),
     AutoImport({
       imports: ["vue", "vue-router"],
+      dts: "types/auto-imports.d.ts",
     }),
     Components({
       resolvers: [AntDesignVueResolver({ importStyle: "less" }), IconsResolver({ prefix: "i" })],
