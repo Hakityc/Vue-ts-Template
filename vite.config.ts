@@ -18,7 +18,7 @@ export default defineConfig({
       dts: "types/auto-imports.d.ts",
     }),
     Components({
-      resolvers: [AntDesignVueResolver({ importStyle: "less" }), IconsResolver({ prefix: "i" })],
+      resolvers: [AntDesignVueResolver(), IconsResolver({ prefix: "i" })],
       dts: "./types/components.d.ts",
       include: [/\.ts$/, /\.vue$/],
     }),
@@ -35,16 +35,6 @@ export default defineConfig({
     extensions: [".js", ".json", ".ts"], // 使用路径别名时想要省略的后缀名，可以自己 增减
   },
   css: {
-    preprocessorOptions: {
-      less: {
-        modifyVars: {
-          "primary-color": "#4d6deb",
-          "text-color": "#2e2e33",
-          "error-color": "#e64552",
-        },
-        javascriptEnabled: true,
-      },
-    },
   },
   server: {
     host: "0.0.0.0",
