@@ -18,7 +18,7 @@ export default defineConfig({
       dts: "types/auto-imports.d.ts",
     }),
     Components({
-      resolvers: [AntDesignVueResolver(), IconsResolver({ prefix: "i" })],
+      resolvers: [AntDesignVueResolver({ importStyle: false }), IconsResolver({ prefix: "i" })],
       dts: "./types/components.d.ts",
       include: [/\.ts$/, /\.vue$/],
     }),
@@ -34,8 +34,7 @@ export default defineConfig({
     },
     extensions: [".js", ".json", ".ts"], // 使用路径别名时想要省略的后缀名，可以自己 增减
   },
-  css: {
-  },
+  css: {},
   server: {
     host: "0.0.0.0",
     proxy: {},
