@@ -7,6 +7,7 @@ import { resolve } from "path"
 import unocss from "unocss/vite"
 import Icons from "unplugin-icons/vite"
 import IconsResolver from "unplugin-icons/resolver"
+import eslint from "vite-plugin-eslint"
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -27,6 +28,7 @@ export default defineConfig({
       autoInstall: true, // 自动安装
       compiler: "vue3", // 编译方式
     }),
+    eslint(),
   ],
   resolve: {
     alias: {
