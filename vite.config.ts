@@ -28,7 +28,7 @@ export default defineConfig({
       autoInstall: true, // 自动安装
       compiler: "vue3", // 编译方式
     }),
-    eslint(),
+    // eslint(),
   ],
   resolve: {
     alias: {
