@@ -1,10 +1,12 @@
 import { RouteRecordRaw, createRouter, createWebHistory } from 'vue-router'
+import {fetchChildrenRoutes} from '@/utils/router'
 
 const routes: RouteRecordRaw[] = [
   {
     name: 'home',
     path: '/',
-    component: () => import('@/views/HomeView.vue')
+    component: () => import('@/views/HomeView.vue'),
+    children:[...fetchChildrenRoutes(),]
   }
 ]
 

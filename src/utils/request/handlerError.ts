@@ -1,5 +1,11 @@
-import type { CmdError } from '@/apis/axios'
 import { AxiosError } from 'axios'
+
+interface CmdError {
+  isCmdError: true
+  code: number
+  data: any
+  message: string
+}
 
 const isAxiosError = (error: any): error is AxiosError => {
   return error.config
