@@ -1,5 +1,5 @@
 # frontend build stage
-FROM node:16-alpine AS frontend-builder
+FROM node:18-alpine AS frontend-builder
 WORKDIR /app
 COPY package*.json ./
 COPY .npmrc ./
